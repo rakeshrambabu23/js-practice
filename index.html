@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+    
+  <!--    <div class="container">
+        <h2> Results </h2>
+    <form id="Results">
+    <div class ="form-group">
+        <label for="English">English subject </label>
+        <input type="number" id="English" name="English" min="0" max="100" requried>
+        </div>
+     <div class ="form-group">
+        <label for="physics">physics subject </label>
+        <input type="number" id="physics" name="physics" min="0" max="100" requried>
+        </div>
+    <div class ="form-group">
+        <label for="chemistry">chemistry subject</label>
+        <input type="number" id="chemistry" name="chemistry" min="0" max="100" requried>
+        </div>
+    <div class ="form-group">
+        <label for="Materials"> Materials subject </label>
+        <input type="number" id="Materials" name="Materials"  min="0" max="100" requried>
+        </div>
+              <button oncliclk="submit" > submit</button>
+          </div>
+        </form>
+      </div>
+    -->
+
+    <!-- TO AND FROM DATE-->
+    
+    
+        <input type="number" placeholder="enter your marks" id="english"/>
+        <input type="number" placeholder="enter your marks" id="physics"/>
+        <input type="number" placeholder="enter your marks" id="chemistry"/>
+        <input type="number" placeholder="enter your marks" id="materials"/>
+        <button onclick="sub()">submit</button>
+    
+
+
+    <script>
+      // switch operator  
+      /*  let x = prompt ("Enter first value");
+        let y = prompt ("Enter second value");  
+
+        const ope=prompt ("+ - * /");
+
+        switch (ope){
+            case '+':
+            alert(x+y);
+            break
+            case '-':
+            alert(x-y);
+            break
+            case '*':
+            alert(x*y);
+            break
+            case '/':
+            alert(x/y);
+            break
+        }
+    */
+   //pin genertion
+
+      /*  const x=2600
+        let pin = prompt("Enter your pin");
+        alert(pin==x);
+    */
+    // to date from date 
+
+   /* function sub(){
+        let x= document.getElementById("To");
+        let y= document.getElementById("From");
+
+        const finalRes=(x<=y);
+        alert ( finalRes)
+    }
+    */
+  
+// subject results
+    
+       function sub(){
+        let a=document.getElementById("english").value;
+        let b=document.getElementById("physics").value;
+        let c=document.getElementById("chemistry").value;
+        let d=document.getElementById("materials").value;
+        const finalRes=(a>=35 && a<=100) &&  (b>=35 && b<=100) &&  (c>=35 &&  c<=100) && (d>=35 && d<=100); 
+        alert (finalRes)
+       }
+
+
+
+    </script>
+  </body>
+</html>
